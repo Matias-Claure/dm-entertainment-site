@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D&M Entertainment | Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-rVcM0nRwdiFn4fli3DW+2MAw8OK0N0Y8Iky2jM3IV25jrPE2VNqW0jZyT8meB5VXvGMwIoAO/BbZcCxH64QJ3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #f3f4f6; }
+    ::-webkit-scrollbar-thumb { background-color: #6366f1; border-radius: 10px; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow fixed top-0 inset-x-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold text-indigo-600">D&M Entertainment</a>
+      <div class="hidden md:flex space-x-8 font-medium">
+        <a href="index.html" class="hover:text-indigo-600 transition">Home</a>
+        <a href="events.html" class="hover:text-indigo-600 transition">Events</a>
+        <a href="about.html" class="hover:text-indigo-600 transition">About</a>
+        <a href="contact.html" class="hover:text-indigo-600 transition">Contact</a>
+      </div>
+      <button id="nav-toggle" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+    <div id="nav-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+      <a href="index.html" class="block px-4 py-2 hover:bg-gray-50">Home</a>
+      <a href="events.html" class="block px-4 py-2 hover:bg-gray-50">Events</a>
+      <a href="about.html" class="block px-4 py-2 hover:bg-gray-50">About</a>
+      <a href="contact.html" class="block px-4 py-2 hover:bg-gray-50">Contact</a>
+    </div>
+  </nav>
+  <!-- Header -->
+  <header class="pt-24 pb-12 bg-indigo-600 text-white text-center">
+    <h1 class="text-4xl font-extrabold mb-2">Get in Touch</h1>
+    <p class="text-lg max-w-xl mx-auto">We'd love to hear from you! Send us a message and we'll get back to you as soon as possible.</p>
+  </header>
+  <!-- Contact Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12">
+      <!-- Contact Form -->
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Send a Message</h2>
+        <form action="#" method="post" class="space-y-4">
+          <div>
+            <label for="name" class="block text-sm font-medium mb-1">Name</label>
+            <input id="name" type="text" required class="w-full border border-gray-300 px-4 py-3 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium mb-1">Email</label>
+            <input id="email" type="email" required class="w-full border border-gray-300 px-4 py-3 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium mb-1">Message</label>
+            <textarea id="message" rows="5" required class="w-full border border-gray-300 px-4 py-3 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+          </div>
+          <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-md font-medium transition">Send Message</button>
+        </form>
+      </div>
+      <!-- Contact Details -->
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Contact Information</h2>
+        <p class="text-gray-700 mb-4">Our team is here to assist you with event inquiries, partnerships and general questions. Reach out through the form or via the details below.</p>
+        <div class="space-y-4 text-gray-700">
+          <p><i class="fas fa-map-marker-alt text-indigo-600 mr-3"></i>123 Event Blvd, Los Angeles, CA 90015</p>
+          <p><i class="fas fa-phone-alt text-indigo-600 mr-3"></i>(213) 555-1234</p>
+          <p><i class="fas fa-envelope text-indigo-600 mr-3"></i><a href="mailto:info@dmentertainment.com" class="hover:underline">info@dmentertainment.com</a></p>
+          <p><i class="fas fa-clock text-indigo-600 mr-3"></i>Monday - Friday: 9:00 AM - 6:00 PM PT</p>
+        </div>
+        <h3 class="text-2xl font-semibold mt-8 mb-3">Connect with us</h3>
+        <div class="flex space-x-5 text-lg">
+          <a href="#" class="hover:text-indigo-600"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-indigo-600"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="hover:text-indigo-600"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="hover:text-indigo-600"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-200 py-10">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-semibold mb-4">About D&M</h3>
+        <p class="text-sm leading-relaxed">D&M Entertainment curates premium entertainment experiences across Los Angeles. From world-class concerts and festivals to thrilling sports matchups, we connect you with unforgettable events.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+          <li><a href="events.html" class="hover:underline">Events</a></li>
+          <li><a href="about.html" class="hover:underline">About</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+        <p class="text-sm">Email: <a href="mailto:info@dmentertainment.com" class="hover:underline">info@dmentertainment.com</a></p>
+        <p class="text-sm">Phone: (213) 555-1234</p>
+        <p class="text-sm">Address: 123 Event Blvd, Los Angeles, CA</p>
+        <div class="flex space-x-4 mt-4">
+          <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="hover:text-white"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-xs text-gray-400">&copy; 2025 D&M Entertainment. All rights reserved.</div>
+  </footer>
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
