@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>D&M Entertainment | About Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-rVcM0nRwdiFn4fli3DW+2MAw8OK0N0Y8Iky2jM3IV25jrPE2VNqW0jZyT8meB5VXvGMwIoAO/BbZcCxH64QJ3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #f3f4f6; }
+    ::-webkit-scrollbar-thumb { background-color: #6366f1; border-radius: 10px; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow fixed top-0 inset-x-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold text-indigo-600">D&M Entertainment</a>
+      <div class="hidden md:flex space-x-8 font-medium">
+        <a href="index.html" class="hover:text-indigo-600 transition">Home</a>
+        <a href="events.html" class="hover:text-indigo-600 transition">Events</a>
+        <a href="about.html" class="hover:text-indigo-600 transition">About</a>
+        <a href="contact.html" class="hover:text-indigo-600 transition">Contact</a>
+      </div>
+      <button id="nav-toggle" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+    <div id="nav-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+      <a href="index.html" class="block px-4 py-2 hover:bg-gray-50">Home</a>
+      <a href="events.html" class="block px-4 py-2 hover:bg-gray-50">Events</a>
+      <a href="about.html" class="block px-4 py-2 hover:bg-gray-50">About</a>
+      <a href="contact.html" class="block px-4 py-2 hover:bg-gray-50">Contact</a>
+    </div>
+  </nav>
+  <!-- Hero -->
+  <!-- Replaced the hero background image with a gradient to avoid missing asset issues -->
+  <section class="relative h-72 md:h-96 flex items-center justify-center bg-gradient-to-r from-green-600 to-teal-600">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 text-center text-white px-4">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-2">About Us</h1>
+      <p class="text-lg md:text-xl max-w-2xl mx-auto">Learn more about D&M Entertainment and our commitment to unforgettable experiences.</p>
+    </div>
+  </section>
+  <!-- Mission Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Our Mission</h2>
+        <p class="text-gray-700 leading-relaxed mb-6">At D&M Entertainment, our mission is to connect people through the power of live events. We curate concerts, festivals and sporting events that celebrate the rich cultural tapestry of Los Angeles. By collaborating with world-class venues and artists, we strive to create experiences that inspire, delight and unite our community.</p>
+        <h3 class="text-2xl font-semibold mt-8 mb-3">Our Values</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
+          <li><span class="font-medium">Passion:</span> We love what we do and believe in the transformative energy of entertainment.</li>
+          <li><span class="font-medium">Inclusivity:</span> Our events welcome people from all walks of life and celebrate diverse voices.</li>
+          <li><span class="font-medium">Excellence:</span> We partner with the best venues and talent to ensure premium experiences.</li>
+          <li><span class="font-medium">Community:</span> We aim to strengthen the cultural fabric of Los Angeles by bringing people together.</li>
+        </ul>
+      </div>
+      <!-- Replace the illustrative image with a gradient panel; this avoids referencing a missing image file -->
+      <div class="relative h-80 md:h-full w-full rounded-lg shadow-lg overflow-hidden">
+        <div class="w-full h-full bg-gradient-to-r from-purple-600 to-indigo-600"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Team / Story Section -->
+  <section class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4 text-center max-w-3xl">
+      <h2 class="text-3xl font-bold mb-6">Our Story</h2>
+      <p class="text-gray-700 leading-relaxed">Founded in 2018 by lifelong music lovers and sports enthusiasts, D&M Entertainment started as a passion project and quickly grew into a trusted platform for discovering the best events in Los Angeles. Over the years, we've partnered with major venues like the Hollywood Bowl, SoFi Stadium and the Rose Bowl to bring our community closer to the artists and teams they love. We continue to innovate, offering curated recommendations and seamless ticketing experiences so you can focus on making memories.</p>
+    </div>
+  </section>
+  <!-- Call to Action -->
+  <section class="py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-4">Join the Experience</h2>
+      <p class="mb-6 text-gray-700">Sign up for our newsletter to get early access to tickets, exclusive content and more.</p>
+      <form action="#" class="max-w-md mx-auto flex flex-col sm:flex-row items-center">
+        <input type="email" placeholder="Your email address" class="flex-1 border border-gray-300 px-4 py-3 rounded-l-md focus:outline-none focus:ring-2 focus:ring-indigo-500" required />
+        <button type="submit" class="mt-4 sm:mt-0 sm:ml-0 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-r-md font-medium transition">Subscribe</button>
+      </form>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-200 py-10">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-semibold mb-4">About D&M</h3>
+        <p class="text-sm leading-relaxed">D&M Entertainment curates premium entertainment experiences across Los Angeles. From world-class concerts and festivals to thrilling sports matchups, we connect you with unforgettable events.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+          <li><a href="events.html" class="hover:underline">Events</a></li>
+          <li><a href="about.html" class="hover:underline">About</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+        <p class="text-sm">Email: <a href="mailto:info@dmentertainment.com" class="hover:underline">info@dmentertainment.com</a></p>
+        <p class="text-sm">Phone: (213) 555-1234</p>
+        <p class="text-sm">Address: 123 Event Blvd, Los Angeles, CA</p>
+        <div class="flex space-x-4 mt-4">
+          <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="hover:text-white"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-xs text-gray-400">&copy; 2025 D&M Entertainment. All rights reserved.</div>
+  </footer>
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
