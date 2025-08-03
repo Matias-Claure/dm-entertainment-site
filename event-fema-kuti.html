@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fema Kuti - D&M Entertainment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-rVcM0nRwdiFn4fli3DW+2MAw8OK0N0Y8Iky2jM3IV25jrPE2VNqW0jZyT8meB5VXvGMwIoAO/BbZcCxH64QJ3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #f3f4f6; }
+    ::-webkit-scrollbar-thumb { background-color: #6366f1; border-radius: 10px; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow fixed top-0 inset-x-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold text-indigo-600">D&M Entertainment</a>
+      <div class="hidden md:flex space-x-8 font-medium">
+        <a href="index.html" class="hover:text-indigo-600 transition">Home</a>
+        <a href="events.html" class="hover:text-indigo-600 transition">Events</a>
+        <a href="about.html" class="hover:text-indigo-600 transition">About</a>
+        <a href="contact.html" class="hover:text-indigo-600 transition">Contact</a>
+      </div>
+      <button id="nav-toggle" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle navigation"><i class="fas fa-bars text-2xl"></i></button>
+    </div>
+    <div id="nav-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+      <a href="index.html" class="block px-4 py-2 hover:bg-gray-50">Home</a>
+      <a href="events.html" class="block px-4 py-2 hover:bg-gray-50">Events</a>
+      <a href="about.html" class="block px-4 py-2 hover:bg-gray-50">About</a>
+      <a href="contact.html" class="block px-4 py-2 hover:bg-gray-50">Contact</a>
+    </div>
+  </nav>
+  <!-- Hero -->
+  <!-- Use a gradient instead of an external image for the hero background -->
+  <section class="relative h-64 md:h-80 flex items-center justify-center bg-gradient-to-r from-purple-600 to-indigo-700">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 text-center text-white px-4">
+      <h1 class="text-3xl md:text-5xl font-extrabold mb-2">Fema Kuti</h1>
+      <p class="text-lg md:text-xl">Live at the Fonda Theatre</p>
+    </div>
+  </section>
+  <!-- Event Details -->
+  <main class="py-12">
+    <div class="container mx-auto px-4 max-w-3xl">
+      <h2 class="text-2xl font-bold mb-4">Event Details</h2>
+      <div class="space-y-4 mb-6">
+        <p><i class="far fa-calendar-alt text-indigo-600 mr-3"></i><span class="font-semibold">Date:</span> Friday, August 8, 2025</p>
+        <p><i class="far fa-clock text-indigo-600 mr-3"></i><span class="font-semibold">Time:</span> 8:00 PM - 10:00 PM</p>
+        <p><i class="fas fa-ticket-alt text-indigo-600 mr-3"></i><span class="font-semibold">Price Range:</span> $40 - $60</p>
+        <p><i class="fas fa-map-marker-alt text-indigo-600 mr-3"></i><span class="font-semibold">Location:</span> Fonda Theatre, 6126 Hollywood Blvd, Los Angeles, CA</p>
+      </div>
+      <p class="text-gray-700 mb-4">Join Afrobeat legend Fema Kuti and the Positive Force for an electrifying evening at the historic Fonda Theatre. Known for his socially conscious lyrics and unstoppable energy, Fema Kuti carries on the legacy of his father Fela with a modern twist that will have you dancing all night long.</p>
+      <p class="text-gray-700 mb-6">The Fonda Theatre's intimate setting makes this show a must-see for fans of world music. Arrive early to explore Hollywood Boulevard and soak up the vibrant atmosphere before the performance.</p>
+      <a href="https://www.fondatheatre.com" target="_blank" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-md font-medium transition">More Info</a>
+      <div class="mt-10 border-t pt-6 text-sm text-gray-600">
+        <p class="mb-2 font-semibold">Sources</p>
+        <ol class="list-decimal list-inside space-y-1">
+          <li><a href="[(610769123550981+L77-L84)] " target="_blank" class="text-indigo-600 hover:underline">Ticket information and schedule from Discover Los Angeles</a></li>
+          <li><a href="[(610769123550981+L88-L90)] " target="_blank" class="text-indigo-600 hover:underline">Description of Fema Kuti's performance</a></li>
+        </ol>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-200 py-10">
+    <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div>
+        <h3 class="text-xl font-semibold mb-4">About D&M</h3>
+        <p class="text-sm leading-relaxed">D&M Entertainment curates premium entertainment experiences across Los Angeles. From world-class concerts and festivals to thrilling sports matchups, we connect you with unforgettable events.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:underline">Home</a></li>
+          <li><a href="events.html" class="hover:underline">Events</a></li>
+          <li><a href="about.html" class="hover:underline">About</a></li>
+          <li><a href="contact.html" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Get in Touch</h3>
+        <p class="text-sm">Email: <a href="mailto:info@dmentertainment.com" class="hover:underline">info@dmentertainment.com</a></p>
+        <p class="text-sm">Phone: (213) 555-1234</p>
+        <p class="text-sm">Address: 123 Event Blvd, Los Angeles, CA</p>
+        <div class="flex space-x-4 mt-4">
+          <a href="#" class="hover:text-white"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="hover:text-white"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="hover:text-white"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-xs text-gray-400">&copy; 2025 D&M Entertainment. All rights reserved.</div>
+  </footer>
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
